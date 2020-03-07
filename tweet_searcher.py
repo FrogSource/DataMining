@@ -1,25 +1,3 @@
-from twython import Twython
-import json
-import pandas as pd
-
-with open("twitter_credentials.json", "r") as file:
-    creds = json.load(file)
-
-python_tweets = Twython(creds['CONSUMER_KEY'],creds['CONSUMER_SECRET'])
-
-query = {'q': '???',
-        'result_type': 'popular',
-        'count': 10,
-        'lang': 'en'
-        }
-
-dict_ ={'user':[],'date':[],'text':[],'favorite_count':[]}
-for status in python_tweets.search(**query)['statuses']:
-    dict_['user'].append(status['user']['screen_name'])
-    dict_['date'].append(status['created_at'])
-    dict_['text'].append(status['text'])
-    dict_['favorite_count'].append(status['favorite_count'])
-
-df = pd.DataFrame(dict_)
-df.sort_values(by='favorite_count', inplace=True, ascending=False)
-df.head(5)
+version https://git-lfs.github.com/spec/v1
+oid sha256:891c1a9edc83b2ec5bf077782d7a242638068d8c6528f36a74dfb3e5105b132b
+size 748

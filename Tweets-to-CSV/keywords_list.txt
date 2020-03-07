@@ -1,6 +1,3 @@
-asiago
-camembert
-gruyere
-mozzarella
-pecorino
-roquefort
+version https://git-lfs.github.com/spec/v1
+oid sha256:65b6a5c863ae12b582998f5bae1c8e403a49d803e82944ec7200804c04ed66d2
+size 55

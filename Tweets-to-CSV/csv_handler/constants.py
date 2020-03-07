@@ -1,4 +1,3 @@
-"""Constants for the package 'csv_handler'"""
-CSV_ENCODING = 'utf-8' # text encoding 
-CSV_SORTED_BY = 'created_at' # attribute used to sort tweets in .csv file
-CSV_SEPARATOR = ';' # column separator character in .csv file
+version https://git-lfs.github.com/spec/v1
+oid sha256:3dc413a30296a654a5b553d4fc296f5a045ca6b820a37cd5ba75cf888b158145
+size 222
